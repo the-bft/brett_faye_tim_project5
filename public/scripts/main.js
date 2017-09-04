@@ -78,7 +78,7 @@ app.events = function () {
 app.callYummly = function (foodChoice, allergyRestrict, dietRestrict) {
 	var idYummly = '95ec33fc';
 	var keyYummly = '2410ab65b1957770177d384fa57c6070';
-	var urlYummly = 'http://api.yummly.com/v1/api/recipes';
+	var urlYummly = 'https://api.yummly.com/v1/api/recipes';
 	var recipeYummly = $.ajax({
 		url: urlYummly,
 		dataType: 'jsonp',
