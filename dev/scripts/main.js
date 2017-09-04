@@ -80,7 +80,7 @@ app.events = () => {
 app.callYummly = (foodChoice, allergyRestrict, dietRestrict) => {
 	let idYummly = '95ec33fc';
 	let keyYummly = '2410ab65b1957770177d384fa57c6070';
-	let urlYummly = 'http://api.yummly.com/v1/api/recipes';
+	let urlYummly = 'https://api.yummly.com/v1/api/recipes';
 	let recipeYummly = $.ajax({
 		url : urlYummly,
 		dataType : 'jsonp',
