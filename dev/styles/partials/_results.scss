@@ -1,0 +1,236 @@
+
+#resultsContainer {
+	height: auto;
+	background-color: #796465;
+	background-image: url('../../dev/assets/arches.png');
+	background-position: center;
+	text-shadow: 0 0 10px $darkerBrown;
+}
+
+.resultsWrapper {
+	@include respond-to('xlarge') {
+		margin: 0 auto;
+		width: 95%; 
+	}
+}
+
+#recipeContainer {
+	float: left;
+	width: 60%;
+	@include respond-to('medium') {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 45px;
+		font-family: $openSans;
+		color: $beige;
+		margin-top: 25px;	
+	}
+
+	img {
+		border-radius: 50px;
+		width: 80%;
+		border: 4px solid $beige;
+		margin-top: 80px;
+		box-shadow: 0 0 10px $darkerBrown;
+	}
+
+	p {
+		color: $beige;
+		font-family: $openSans;
+		font-weight: bold;
+		font-size: 20px;
+		margin-top: 20px;
+	}
+
+	h4 {
+		font-size: 30px;
+		font-family: $openSans;
+		color: $beige;
+		padding-bottom: 10px
+	}
+
+	a {
+		color: $beige;
+		font-family: $openSans;
+		background: none;
+		font-size: 18px;
+		text-transform: uppercase;
+		text-decoration: underline;
+	}
+
+	.saveButton {
+		color: $brown;
+		background: $beige;
+		font-family: $openSans;
+		font-size: 20px;
+		margin-bottom: 40px;
+		margin-top: 40px;
+		outline: none;
+		box-shadow: 0 0 10px $darkerBrown;
+	}
+}
+
+aside {
+	width: 40%;
+	float: right;
+	padding-bottom: 50px;
+	li {
+		list-style-type: none;
+	}
+	@include respond-to('medium') {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.savedRecipes {
+	color: $beige;
+	text-align: center;
+	font-family: $openSans;
+	padding-bottom: 50px;
+	h3 {
+		font-size: 45px;
+		padding-bottom: 20px;
+	}
+}
+
+.savedRecipeItem {
+	width: 50%;
+	float: left;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	@include respond-to('large') {
+		height: 130px;
+		margin-bottom: 15px;
+	}
+	@include respond-to('medium') {
+		margin-bottom: 125px;
+		}
+	@include respond-to('small') {
+		margin-bottom: 40px
+	}
+	p {
+		padding-bottom: 10px;
+	}
+	
+	}
+
+a.savedRecipeLink {
+	display: block;
+	font-family: $openSans;
+	font-size: 15px;
+	color: $beige;
+	font-weight: 700;
+	@include respond-to('xlarge') {
+	font-size: 12px;
+	}
+}
+
+.savedRecipeImage {
+	max-width: 100%;
+	border-radius: 50px;
+	border: 4px solid $beige;
+	box-shadow: 0 0 10px $darkerBrown;
+	transition: all 0.5s ease;
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+#weatherContainer {
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 120px;
+	width: 100%;
+	height: 100px;
+	text-align: left;
+	font-family: $openSans;
+	font-weight: bold;
+	position: relative;
+	@include respond-to('xlarge') {
+		margin-top: 0px;
+		margin-bottom: 150px;
+		}
+	@include respond-to('large') {
+		margin-top: 0px;
+		margin-bottom: 200px;
+		}
+	@include respond-to('medium') {
+		margin-top: 0px;
+		margin-bottom: 150px;
+		}
+
+	h4 {
+		font-size: 50px;
+		color: $beige;
+		padding-left: 190px;
+		margin-bottom: 15px;
+		line-height: 60px;
+		padding-top: 50px;
+		// padding-bottom: 80px;
+		@include respond-to('xlarge') {
+		line-height: 60px;
+		padding-left: 150px;
+	
+		}
+		@include respond-to('large') {
+		line-height: 60px;
+		padding-left: 140px;
+	
+		}
+		@include respond-to('medium') {
+		padding-left: 140px;
+		line-height: 60px;
+	
+		}
+	}
+
+	p {
+		font-size: 40px;
+		font-family: $openSans;
+		color: $beige;
+		font-weight: lighter;
+		padding-left: 190px;
+		margin-top: 0px;
+		@include respond-to('xlarge') {
+		padding-left: 150px;
+	
+		}
+		@include respond-to('large') {
+		padding-left: 140px;
+	
+		}
+		@include respond-to('medium') {
+		padding-left: 140px;
+		}
+	}
+
+	.weatherIcon {
+		width: 220px;
+		text-align: left;
+		position: absolute;
+		top: 2px;
+		left: 15px;
+		filter: drop-shadow(0 0 2px $darkerBrown);
+		@include respond-to('xlarge') {
+		top: 4px;
+		left: -30px;
+	
+		}
+		@include respond-to('large') {
+		top: 4px;
+		left: -30px;
+	
+		}
+		@include respond-to('medium') {
+		top: 20px;
+		left: -40px;
+		}
+	}
+}

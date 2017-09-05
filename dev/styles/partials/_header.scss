@@ -1,0 +1,78 @@
+
+header {
+	background-image: url('../../dev/assets/elli-o-65548-edit5.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 1000px;
+	@include respond-to('large') {
+		background-position: 25% 50%;
+	}
+	@include respond-to('medium') {
+		height: 800px;
+		margin: 0 auto;
+		text-align: center;
+		background-position: 5% 50%;
+	}
+}
+
+.overlay {
+	box-shadow: inset 0 0 0 1000px rgba(57, 47, 48, 0.15);
+	height: 1000px;
+}
+
+.headerContainer {
+	width: 500px;
+	text-align: center;
+	color: #DDE8B9;
+	position: relative;
+	@include respond-to('medium') {
+		width: 100%;
+	}
+	h1 {
+		color: $beige;
+		font-family: $playfair;
+		font-style: italic;
+		font-weight: 700;
+		font-size: 150px;
+		line-height: 170px;
+		text-shadow: 0 0 15px $darkerBrown;
+		@include respond-to('medium') {
+			font-size: 80px;
+			line-height: 80px;
+		}
+	}
+	h2 {
+		padding-top: 30px;
+		font-weight: 400;
+		font-size: 50px;
+		font-family: $openSans;
+		text-shadow: 10px 10px 15px $darkerBrown;
+	}
+}
+
+.title {
+	position: absolute;
+	margin-top: 32%;
+	margin-left: 5%;
+	@include respond-to('medium') {
+		position: static;
+		margin: 0;
+		padding-top: 35%;
+	}
+}
+
+#getStarted {
+	font-family: $openSans;
+	color: $darkerBrown;
+	font-weight: 400;
+	font-size: 20px;
+	background-color: $beige;
+	margin-top: 50px;
+	outline: none;
+}
+
+#getStarted:hover {
+	background: $brown;
+	opacity: 40%;
+	color: $beige;
+}
