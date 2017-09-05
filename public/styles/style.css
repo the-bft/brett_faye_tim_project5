@@ -479,7 +479,8 @@ aside {
   text-align: center; }
   @media (max-width: 856px) {
     .savedRecipeItem {
-      height: 130px; } }
+      height: 130px;
+      margin-bottom: 15px; } }
   @media (max-width: 696px) {
     .savedRecipeItem {
       margin-bottom: 125px; } }
@@ -514,7 +515,7 @@ a.savedRecipeLink {
 #weatherContainer {
   text-align: center;
   margin-top: 80px;
-  margin-bottom: 180px;
+  margin-bottom: 120px;
   width: 100%;
   height: 100px;
   text-align: left;
@@ -524,52 +525,52 @@ a.savedRecipeLink {
   @media (max-width: 1109px) {
     #weatherContainer {
       margin-top: 0px;
-      margin-bottom: 200px; } }
+      margin-bottom: 150px; } }
   @media (max-width: 856px) {
     #weatherContainer {
       margin-top: 0px;
-      margin-bottom: 300px; } }
+      margin-bottom: 200px; } }
   @media (max-width: 696px) {
     #weatherContainer {
       margin-top: 0px;
-      margin-bottom: 250px; } }
+      margin-bottom: 150px; } }
   #weatherContainer h4 {
     font-size: 50px;
     color: #E8D2AE;
-    padding-left: 160px;
+    padding-left: 190px;
     margin-bottom: 15px;
     line-height: 60px;
     padding-top: 50px; }
     @media (max-width: 1109px) {
       #weatherContainer h4 {
         line-height: 60px;
-        padding-left: 120px; } }
+        padding-left: 150px; } }
     @media (max-width: 856px) {
       #weatherContainer h4 {
         line-height: 60px;
-        padding-left: 120px; } }
+        padding-left: 140px; } }
     @media (max-width: 696px) {
       #weatherContainer h4 {
-        padding-left: 90px;
+        padding-left: 140px;
         line-height: 60px; } }
   #weatherContainer p {
     font-size: 40px;
     font-family: "Open Sans Condensed", sans-serif;
     color: #E8D2AE;
     font-weight: lighter;
-    padding-left: 160px;
+    padding-left: 190px;
     margin-top: 0px; }
     @media (max-width: 1109px) {
       #weatherContainer p {
-        padding-left: 120px; } }
+        padding-left: 150px; } }
     @media (max-width: 856px) {
       #weatherContainer p {
-        padding-left: 120px; } }
+        padding-left: 140px; } }
     @media (max-width: 696px) {
       #weatherContainer p {
-        padding-left: 90px; } }
+        padding-left: 140px; } }
   #weatherContainer .weatherIcon {
-    width: 150px;
+    width: 220px;
     text-align: left;
     position: absolute;
     top: 2px;
@@ -578,11 +579,11 @@ a.savedRecipeLink {
             filter: drop-shadow(0 0 2px #392F30); }
     @media (max-width: 1109px) {
       #weatherContainer .weatherIcon {
-        top: 30px;
+        top: 4px;
         left: -30px; } }
     @media (max-width: 856px) {
       #weatherContainer .weatherIcon {
-        top: 30px;
+        top: 4px;
         left: -30px; } }
     @media (max-width: 696px) {
       #weatherContainer .weatherIcon {
