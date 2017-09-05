@@ -1,0 +1,176 @@
+
+input.my-input {
+	color: $brown;
+	font-family: $openSans;
+	margin-bottom: 10px;
+}
+
+.tp-autocomplete {
+	margin: 0 auto;
+	font-family: $openSans;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	@include respond-to('small') {
+		width: 95%;
+	}
+}
+
+.tp-ac__input {
+	font-family: $openSans;
+	color: $darkerBrown;
+	box-shadow: 2px 2px 4px $brown;
+}
+
+.tp-ac__list {
+	background-color: white;
+	color: $darkerBrown;
+}
+
+.tp-ac__item:hover, .tp-ac__item.is-active {
+    background-color: $beige; }
+
+.userInfo {
+	margin: 0 auto;
+	background-image: url('../../dev/assets/debut-light.png');
+}
+
+.foodRestricts {
+	margin: 0 auto;
+	text-align: center;
+	@include respond-to('medium') {
+		label {
+			font-size: 30px;
+			@include respond-to('small') {
+				font-size: 20px;
+				padding-left: 10px;
+			}
+		}
+	}
+}
+
+.foodRestricts img{
+	max-width: 50%;
+}
+
+.firstPartFoodRestricts {
+	width: 100%;
+}
+
+.peanutFree, .treenutFree, .glutenFree, .seafoodFree, .dairyFree, .eggFree {
+	margin: 0;
+	padding: 0;
+	width: calc(100% / 6);
+	height: 250px;
+	float: left;
+	@include respond-to('xlarge') {
+		height: 200px;
+	}
+	@include respond-to('large') {
+		width: 20%;
+		float: none;
+		display: inline-block;
+	}
+	@include respond-to('medium') {
+		width: 30%;
+	}
+	@include respond-to('small') {
+		width: 40%;
+		height: 150px;
+	}
+	img {
+		max-width: 60%;
+	}
+}
+
+.soyFree, .seasameFree, .sulfiteFree, .vegetarian, .vegan, .paleo {
+	margin: 0;
+	padding: 0;
+	width: calc(100% / 6);
+	height: 250px;
+	float: left;
+	@include respond-to('xlarge') {
+		height: 200px;
+	}
+	@include respond-to('large') {
+		width: 20%;
+		float: none;
+		display: inline-block;
+	}
+	@include respond-to('medium') {
+		width: 30%;
+	}
+	@include respond-to('small') {
+		width: 40%;
+		height: 150px;
+	}
+	img {
+		max-width: 60%;
+	}
+}
+
+form {
+	background: $beige;
+	min-width: 100%;
+	margin: 0;
+	padding-bottom: 50px;
+	font-family: $openSans;
+	font-weight: 400;
+	color: $brown;
+	font-size: 25px;
+	@include respond-to('small') {
+		font-size: 15px;
+	}
+}
+
+.soyFree img{
+	width: 80%;
+}
+
+.paleo img {
+	width: 75%;
+	display: block;
+	margin: 0 auto;
+	@include respond-to('xlarge') {
+		display: inline;
+	}
+}
+
+input[type=submit] {
+	margin: 0 auto;
+	font-size: 15px;
+	padding:15px 30px;
+	font-family: $openSans;
+	background: $brown;
+	color: $beige;
+	border: none;
+	display: block;
+	border-radius: 50px;
+	outline: none;
+}
+
+input[type=submit]:hover {
+	background-color: $beige;
+	color: $brown;
+	font-weight: bolder;
+}
+
+input[type=checkbox] {
+	appearance: none;
+	width: 21px;
+	height: 21px;
+	background: $red;
+	border-radius: 50%;
+	color: $brown;
+	position: relative;
+	box-shadow: 0 0 5px $brown;
+	outline: none;
+	&:checked::after{
+		position: absolute;
+		content: 'X';
+		color: $beige;
+		font-weight: 700;
+		font-size: 18px;
+		left: 6px;
+		bottom: 0px;
+		}
+	}
